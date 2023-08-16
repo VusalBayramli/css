@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#services .servicestext {
+  padding-left: 40px;
+}
+#services .servicestext h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+#services .servicestext h4 {
+  color: red;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+#services .boxes {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  position: relative;
+}
+#services .boxes .box {
+  width: 30%;
+  height: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 40px;
+  margin-right: 20px;
+  background-color: whitesmoke;
+  padding-left: 80px;
+}
+#services .boxes .box:hover {
+  background-color: rgba(255, 0, 0, 0.945);
+}
+#services .boxes .box i {
+  color: grey;
+  padding-left: 120px;
+  font-size: 20px;
+}
+
+#works .work {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#works .work .workstext {
+  margin-top: 50px;
+  padding-left: 100px;
+}
+#works .work .workstext h1 {
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+}
+#works .work .workstext h3 {
+  color: red;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+}
+#works .view {
+  padding: 10px 15px;
+  border: 2px solid red;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+}
+#works .view::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+}
+#works .view:hover {
+  color: white;
+}
+#works .view:hover::before {
+  width: 100%;
+}
+
+#workphoto {
+  padding: 3rem 0;
+}
+#workphoto .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+#workphoto .boxes .box {
+  width: 30%;
+  overflow: hidden;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+#workphoto .boxes .box .box-image img {
+  transition: 1s;
+  vertical-align: middle;
+}
+#workphoto .boxes .box:hover .box-image img {
+  transform: scale(1.1);
+}
+#workphoto .boxes .box .box-image {
+  width: 100%;
+}
+#workphoto .boxes .box .box-image img {
+  width: 100%;
+  transform: scale(1);
+}/*# sourceMappingURL=index7.css.map */
